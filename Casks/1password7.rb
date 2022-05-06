@@ -13,6 +13,7 @@ cask "1password7" do
   end
 
   auto_updates true
+  conflicts_with cask: "homebrew/cask-versions/1password-beta"
   depends_on macos: ">= :high_sierra"
 
   app "1Password #{version.major}.app"
